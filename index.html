@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extended todo list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Play audio musix  -->
+    <audio id="songAudio" controls loop="infinite">
+      <source src="bensound-anewbeginning.mp3" controls="controls" /></audio
+    ><br />
+
+    <button class="audbutton" onclick="enableControls()" type="button">
+      Enable controls
+    </button>
+    <button class="audbutton" onclick="disableControls()" type="button">
+      Disable controls
+    </button>
+
+    <!-- Header info -->
+
+    <div id="myDIV" class="header">
+      <h2>Extended todo list</h2>
+      <input type="text" id="myInput" placeholder="Add your activity.." />
+      <span onclick="newElement()" class="addBtn">ADD</span>
+    </div>
+
+    <!-- My UL info -->
+    <ul id="myUL">
+      <li>Well informed people are well-prepared!</li>
+      <li>
+        Practice like a devil and put the results in the hands of Almighty Allah
+      </li>
+      <li>Enjoy your weekend like a last weekend in your life!</li>
+      <li>Sleep like you never slept before</li>
+    </ul>
+
+    <a id="download_link" download="exportedData.txt" onclick="downloadData()"
+      >Download List</a
+    >
+
+    <!-- <button onclick="DownLoadData()">Click me</button> -->
+    <script>
+      console.dir(document);
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

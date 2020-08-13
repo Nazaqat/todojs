@@ -1,0 +1,143 @@
+body {
+  margin: 1% 25% 25% 25%;
+  max-width: 50%;
+  background-color: #e0e0e0;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling Audio Musix  */
+.audbutton {
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 30px;
+}
+
+.audbutton:hover {
+  background-color: #9dceee;
+  color: white;
+}
+/* Style the header */
+.header {
+  background-color: #9dceee;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  margin: 5px;
+  color: #d35400;
+  font-family: "Permanent Marker";
+  font-size: 3em;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+
+.addBtn {
+  border-radius: 5px;
+  border: 2px solid #21618c;
+  padding: 10px 10px 0px 10px;
+  margin-left: 1em;
+  width: 100px;
+  height: 40px;
+  float: left;
+  transition-duration: 1s;
+}
+
+.addBtn:hover {
+  width: 110px;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  text-decoration: line-through;
+  background-color: #e0e0e0;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #ff6781;
+  color: white;
+}
+
+#download_link {
+  background-color: grey;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#download_link:hover {
+  background-color: #9dceee;
+}
+
+a {
+  margin-top: 1rem;
+}
